@@ -104,7 +104,7 @@ The core scripts use the standard library only. `scripts/run_api.py` (the capped
 | Pairs that differ from v1 | — | V10 (the v1 version is not exploitable on modern CPython), V15 and V30 (shared names biased both twins), V27 (`timeout` added to both); see `CHANGELOG.md` |
 
 ## Related work and scope
-Comment and context attacks on LLM detectors are an active area: Flashboom (S&P 2025); Thornton (2026); Sun, Oprea & Wong (2026); ALIBI (2026); Alexopoulos et al. (ICSE 2027); Shahriar et al. (S&P 2027). v2's narrower contribution is measuring **in-code comments on matched fixed twins with d′/c**. See `docs/NOVELTY_AUDIT_EXPANSION_2026-11-24.md` for the full list.
+Comment and context attacks on LLM detectors are an active area: Flashboom (S&P 2025); Thornton (2026); Sun, Oprea & Wong (2026); ALIBI (2026); Alexopoulos et al. (ICSE 2027); Shahriar et al. (S&P 2027). Closest robustness evaluations of LLM vulnerability detection: SecLLMHolmes (Ullah et al., S&P 2024), which perturbs code including random code in comments on vulnerable/patched pairs, and the Familiar Pattern Attack (Bernstein, Beste, Ayzenshteyn, Schönherr, Mirsky, NDSS 2026), which manipulates detectors through code patterns rather than comments. v2's narrower contribution is measuring **in-code comments on matched fixed twins with d′/c**. See `docs/NOVELTY_AUDIT_EXPANSION_2026-11-24.md` for the full list.
 
 ## Citation and license
 See `CITATION.cff`. Code is MIT; data is CC-BY-4.0 (the same as v1).
