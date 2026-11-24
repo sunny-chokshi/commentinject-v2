@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+description: CommentInject v2 code review under misleading comments
+
+prompts:
+  - id: file://review_prompt.j2
+    label: commentinject_review
+
+providers:
+  # Same settings as the benchmark's own runner (scripts/run.py): Ollama /api/generate,
+  # temperature 0, seed 0, no token cap. Point OLLAMA_BASE_URL elsewhere if needed.
+  - id: ollama:completion:qwen2.5-coder:7b
+    label: qwen2.5-coder:7b
+    config:
+      temperature: 0
+      seed: 0
+
+defaultTest:
+  assert:
+    # Pass = the VULNERABLE/SAFE verdict matches the case label (vars.label).
+    # namedScores.flagged is the raw verdict (1 = VULNERABLE), so its mean is the yes-rate.
+    - type: javascript
+      value: file://verdict.js
+      metric: correct_verdict
+
+# 840 tests: 30 matched pairs x 2 twins (vulnerable, fixed) x 14 comment conditions.
+# Run a slice with e.g. --filter-metadata pair_id=V24 or --filter-metadata condition=clean.
+tests: file://tests.jsonl

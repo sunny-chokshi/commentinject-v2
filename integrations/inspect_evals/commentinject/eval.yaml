@@ -1,0 +1,25 @@
+---
+# Metadata in the shape of inspect_evals' per-eval eval.yaml (src/inspect_evals/<eval>/eval.yaml).
+# Not validated against inspect_evals' metadata.py: new evals now enter through the
+# register/ process instead (see README "Upstream status").
+title: 'CommentInject v2: Misleading Code Comments vs. LLM Security Review'
+description: |
+  Tests whether adversarial code comments make an LLM security reviewer approve vulnerable
+  Python code. 30 matched pairs (a vulnerable function and a minimally edited secure twin)
+  x 14 comment conditions (clean, neutral doc comment, 12 adversarial strategies) = 840
+  single-turn samples, scored on the first-line VULNERABLE / SAFE verdict.
+arxiv: null  # no arXiv paper yet; v1 dataset DOI: https://doi.org/10.5281/zenodo.23088528
+group: Cybersecurity
+contributors:
+  - TODO-github-username
+version: "2-A"
+tasks:
+  - name: commentinject
+    dataset_samples: 840
+metadata:
+  fast: true
+  sandbox: []
+  requires:
+    internet: false
+    gpu: false
+external_assets: []  # dataset ships inside the package (commentinject/data/commentinject_v2.jsonl)

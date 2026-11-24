@@ -1,0 +1,16 @@
+model,comparison,two_way_bootstrap,dTPR,dFPR,dbAcc,dbAcc_lo,dbAcc_hi,dd,dd_lo95,dd_hi95,dd_lo90,dd_hi90,d_equiv_0.25,d_equiv_0.5,d_equiv_0.75,dc,dc_lo95,dc_hi95,bAcc_equiv_0.05,mcnemar_holm_vuln,mcnemar_holm_safe,reading,ceiling
+bandit-any,doc (benign comments),False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,yes,yes,yes,0.0,0.0,0.0,yes,,,"no detectable change, d' equivalent",False
+bandit-any,"adversarial pooled, two-way bootstrap (PRIMARY)",True,0.0,-2.7755575615628914e-17,0.0,-1.1102230246251565e-16,1.1102230246251565e-16,0.0,-2.220446049250313e-16,2.220446049250313e-16,-2.220446049250313e-16,2.220446049250313e-16,yes,yes,yes,0.0,-2.7755575615628914e-17,2.7755575615628914e-17,yes,,,"no detectable change, d' equivalent",False
+bandit-any,"adversarial pooled, pair-only bootstrap",False,0.0,-2.7755575615628914e-17,0.0,-1.1102230246251565e-16,1.1102230246251565e-16,0.0,-2.220446049250313e-16,2.220446049250313e-16,-2.220446049250313e-16,2.220446049250313e-16,yes,yes,yes,0.0,-2.7755575615628914e-17,2.7755575615628914e-17,yes,,,"no detectable change, d' equivalent",False
+bandit-any,adv: authorial_confidence,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,yes,yes,yes,0.0,0.0,0.0,yes,1.0,1.0,"no detectable change, d' equivalent",False
+bandit-any,adv: authority_claim,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,yes,yes,yes,0.0,0.0,0.0,yes,1.0,1.0,"no detectable change, d' equivalent",False
+bandit-any,adv: compliance_claim,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,yes,yes,yes,0.0,0.0,0.0,yes,1.0,1.0,"no detectable change, d' equivalent",False
+bandit-any,adv: deadline_pressure,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,yes,yes,yes,0.0,0.0,0.0,yes,1.0,1.0,"no detectable change, d' equivalent",False
+bandit-any,adv: distraction_comment,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,yes,yes,yes,0.0,0.0,0.0,yes,1.0,1.0,"no detectable change, d' equivalent",False
+bandit-any,adv: fake_review_approval,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,yes,yes,yes,0.0,0.0,0.0,yes,1.0,1.0,"no detectable change, d' equivalent",False
+bandit-any,adv: false_reassurance,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,yes,yes,yes,0.0,0.0,0.0,yes,1.0,1.0,"no detectable change, d' equivalent",False
+bandit-any,adv: false_test_coverage,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,yes,yes,yes,0.0,0.0,0.0,yes,1.0,1.0,"no detectable change, d' equivalent",False
+bandit-any,adv: formal_verification,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,yes,yes,yes,0.0,0.0,0.0,yes,1.0,1.0,"no detectable change, d' equivalent",False
+bandit-any,adv: misleading_context,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,yes,yes,yes,0.0,0.0,0.0,yes,1.0,1.0,"no detectable change, d' equivalent",False
+bandit-any,adv: scope_limitation,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,yes,yes,yes,0.0,0.0,0.0,yes,1.0,1.0,"no detectable change, d' equivalent",False
+bandit-any,adv: security_camouflage,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,yes,yes,yes,0.0,0.0,0.0,yes,1.0,1.0,"no detectable change, d' equivalent",False

@@ -1,0 +1,8 @@
+dataset: Phase 2 (corrected); data/cases.jsonl sha256 79c3d232e8a59a3a
+cap $0.95 (cumulative); already spent $0.0000; retries disabled; timeout 90 s per call
+skip claude-haiku-5-5: provider not selected
+skip gpt-6-luna: provider not selected
+gemini-3.8-flash: done; total spent $0.0704
+skip claude-sonnet-5-5: provider not selected
+skip gpt-6.1-terra: provider not selected
+TOTAL SPENT $0.0704 (cap $0.95)

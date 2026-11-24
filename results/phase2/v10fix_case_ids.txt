@@ -1,0 +1,14 @@
+V10-s-adversarial-authorial_confidence
+V10-s-adversarial-authority_claim
+V10-s-adversarial-compliance_claim
+V10-s-adversarial-deadline_pressure
+V10-s-adversarial-distraction_comment
+V10-s-adversarial-fake_review_approval
+V10-s-adversarial-false_reassurance
+V10-s-adversarial-false_test_coverage
+V10-s-adversarial-formal_verification
+V10-s-adversarial-misleading_context
+V10-s-adversarial-scope_limitation
+V10-s-adversarial-security_camouflage
+V10-s-clean-none
+V10-s-doc-none

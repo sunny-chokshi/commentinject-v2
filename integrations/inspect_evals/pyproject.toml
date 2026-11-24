@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "commentinject"
+version = "2.0.0.dev0"
+description = "CommentInject v2 security-review benchmark as an Inspect (inspect_ai) task"
+requires-python = ">=3.10"
+license = { text = "MIT (code); CC-BY-4.0 (data)" }
+dependencies = ["inspect_ai>=0.3.150"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.entry-points.inspect_ai]
+commentinject = "commentinject._registry"
+
+[tool.setuptools]
+packages = ["commentinject"]
+
+[tool.setuptools.package-data]
+commentinject = ["data/*.jsonl"]
+
+[tool.pytest.ini_options]
+testpaths = ["commentinject/tests"]

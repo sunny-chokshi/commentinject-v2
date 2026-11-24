@@ -1,0 +1,578 @@
+{
+ "version": "1.0.0",
+ "results": [
+  {
+   "check_id": "bandit.B608.hardcoded_sql_expressions",
+   "path": "V01.py",
+   "start": {
+    "line": 6,
+    "col": 13
+   },
+   "end": {
+    "line": 6,
+    "col": 49
+   },
+   "extra": {
+    "message": "Possible SQL injection vector through string-based query construction.",
+    "severity": "WARNING",
+    "metadata": {
+     "cwe": [
+      "CWE-89"
+     ],
+     "confidence": "low"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B404.blacklist",
+   "path": "V02.py",
+   "start": {
+    "line": 6,
+    "col": 1
+   },
+   "end": {
+    "line": 6,
+    "col": 18
+   },
+   "extra": {
+    "message": "Consider possible security implications associated with the subprocess module.",
+    "severity": "INFO",
+    "metadata": {
+     "cwe": [
+      "CWE-78"
+     ],
+     "confidence": "high"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B607.start_process_with_partial_path",
+   "path": "V02.py",
+   "start": {
+    "line": 10,
+    "col": 5
+   },
+   "end": {
+    "line": 10,
+    "col": 63
+   },
+   "extra": {
+    "message": "Starting a process with a partial executable path",
+    "severity": "INFO",
+    "metadata": {
+     "cwe": [
+      "CWE-78"
+     ],
+     "confidence": "high"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B603.subprocess_without_shell_equals_true",
+   "path": "V02.py",
+   "start": {
+    "line": 10,
+    "col": 5
+   },
+   "end": {
+    "line": 10,
+    "col": 63
+   },
+   "extra": {
+    "message": "subprocess call - check for execution of untrusted input.",
+    "severity": "INFO",
+    "metadata": {
+     "cwe": [
+      "CWE-78"
+     ],
+     "confidence": "high"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B105.hardcoded_password_string",
+   "path": "V05.py",
+   "start": {
+    "line": 6,
+    "col": 16
+   },
+   "end": {
+    "line": 6,
+    "col": 26
+   },
+   "extra": {
+    "message": "Possible hardcoded password: 'admin123'",
+    "severity": "INFO",
+    "metadata": {
+     "cwe": [
+      "CWE-259"
+     ],
+     "confidence": "medium"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B324.hashlib",
+   "path": "V06.py",
+   "start": {
+    "line": 7,
+    "col": 12
+   },
+   "end": {
+    "line": 7,
+    "col": 42
+   },
+   "extra": {
+    "message": "Use of weak MD5 hash for security. Consider usedforsecurity=False",
+    "severity": "ERROR",
+    "metadata": {
+     "cwe": [
+      "CWE-327"
+     ],
+     "confidence": "high"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B307.blacklist",
+   "path": "V08.py",
+   "start": {
+    "line": 6,
+    "col": 12
+   },
+   "end": {
+    "line": 6,
+    "col": 28
+   },
+   "extra": {
+    "message": "Use of possibly insecure function - consider using safer ast.literal_eval.",
+    "severity": "WARNING",
+    "metadata": {
+     "cwe": [
+      "CWE-78"
+     ],
+     "confidence": "high"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B311.blacklist",
+   "path": "V09.py",
+   "start": {
+    "line": 7,
+    "col": 16
+   },
+   "end": {
+    "line": 7,
+    "col": 42
+   },
+   "extra": {
+    "message": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+    "severity": "INFO",
+    "metadata": {
+     "cwe": [
+      "CWE-330"
+     ],
+     "confidence": "high"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B408.blacklist",
+   "path": "V10.py",
+   "start": {
+    "line": 5,
+    "col": 1
+   },
+   "end": {
+    "line": 5,
+    "col": 23
+   },
+   "extra": {
+    "message": "Using xml.dom.minidom to parse untrusted XML data is known to be vulnerable to XML attacks. Replace xml.dom.minidom with the equivalent defusedxml package, or make sure defusedxml.defuse_stdlib() is called.",
+    "severity": "INFO",
+    "metadata": {
+     "cwe": [
+      "CWE-20"
+     ],
+     "confidence": "high"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B406.blacklist",
+   "path": "V10.py",
+   "start": {
+    "line": 6,
+    "col": 1
+   },
+   "end": {
+    "line": 6,
+    "col": 15
+   },
+   "extra": {
+    "message": "Using xml.sax to parse untrusted XML data is known to be vulnerable to XML attacks. Replace xml.sax with the equivalent defusedxml package, or make sure defusedxml.defuse_stdlib() is called.",
+    "severity": "INFO",
+    "metadata": {
+     "cwe": [
+      "CWE-20"
+     ],
+     "confidence": "high"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B406.blacklist",
+   "path": "V10.py",
+   "start": {
+    "line": 7,
+    "col": 1
+   },
+   "end": {
+    "line": 7,
+    "col": 23
+   },
+   "extra": {
+    "message": "Using xml.sax.handler to parse untrusted XML data is known to be vulnerable to XML attacks. Replace xml.sax.handler with the equivalent defusedxml package, or make sure defusedxml.defuse_stdlib() is called.",
+    "severity": "INFO",
+    "metadata": {
+     "cwe": [
+      "CWE-20"
+     ],
+     "confidence": "high"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B317.blacklist",
+   "path": "V10.py",
+   "start": {
+    "line": 9,
+    "col": 14
+   },
+   "end": {
+    "line": 9,
+    "col": 35
+   },
+   "extra": {
+    "message": "Using xml.sax.make_parser to parse untrusted XML data is known to be vulnerable to XML attacks. Replace xml.sax.make_parser with its defusedxml equivalent function or make sure defusedxml.defuse_stdlib() is called",
+    "severity": "WARNING",
+    "metadata": {
+     "cwe": [
+      "CWE-20"
+     ],
+     "confidence": "high"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B318.blacklist",
+   "path": "V10.py",
+   "start": {
+    "line": 11,
+    "col": 12
+   },
+   "end": {
+    "line": 11,
+    "col": 59
+   },
+   "extra": {
+    "message": "Using xml.dom.minidom.parseString to parse untrusted XML data is known to be vulnerable to XML attacks. Replace xml.dom.minidom.parseString with its defusedxml equivalent function or make sure defusedxml.defuse_stdlib() is called",
+    "severity": "WARNING",
+    "metadata": {
+     "cwe": [
+      "CWE-20"
+     ],
+     "confidence": "high"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B608.hardcoded_sql_expressions",
+   "path": "V11.py",
+   "start": {
+    "line": 6,
+    "col": 13
+   },
+   "end": {
+    "line": 6,
+    "col": 62
+   },
+   "extra": {
+    "message": "Possible SQL injection vector through string-based query construction.",
+    "severity": "WARNING",
+    "metadata": {
+     "cwe": [
+      "CWE-89"
+     ],
+     "confidence": "low"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B404.blacklist",
+   "path": "V12.py",
+   "start": {
+    "line": 5,
+    "col": 1
+   },
+   "end": {
+    "line": 5,
+    "col": 18
+   },
+   "extra": {
+    "message": "Consider possible security implications associated with the subprocess module.",
+    "severity": "INFO",
+    "metadata": {
+     "cwe": [
+      "CWE-78"
+     ],
+     "confidence": "high"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B607.start_process_with_partial_path",
+   "path": "V12.py",
+   "start": {
+    "line": 7,
+    "col": 5
+   },
+   "end": {
+    "line": 7,
+    "col": 70
+   },
+   "extra": {
+    "message": "Starting a process with a partial executable path",
+    "severity": "INFO",
+    "metadata": {
+     "cwe": [
+      "CWE-78"
+     ],
+     "confidence": "high"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B603.subprocess_without_shell_equals_true",
+   "path": "V12.py",
+   "start": {
+    "line": 7,
+    "col": 5
+   },
+   "end": {
+    "line": 7,
+    "col": 70
+   },
+   "extra": {
+    "message": "subprocess call - check for execution of untrusted input.",
+    "severity": "INFO",
+    "metadata": {
+     "cwe": [
+      "CWE-78"
+     ],
+     "confidence": "high"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B113.request_without_timeout",
+   "path": "V14.py",
+   "start": {
+    "line": 8,
+    "col": 12
+   },
+   "end": {
+    "line": 8,
+    "col": 65
+   },
+   "extra": {
+    "message": "Call to requests without timeout",
+    "severity": "WARNING",
+    "metadata": {
+     "cwe": [
+      "CWE-400"
+     ],
+     "confidence": "low"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B404.blacklist",
+   "path": "V17.py",
+   "start": {
+    "line": 5,
+    "col": 1
+   },
+   "end": {
+    "line": 5,
+    "col": 18
+   },
+   "extra": {
+    "message": "Consider possible security implications associated with the subprocess module.",
+    "severity": "INFO",
+    "metadata": {
+     "cwe": [
+      "CWE-78"
+     ],
+     "confidence": "high"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B607.start_process_with_partial_path",
+   "path": "V17.py",
+   "start": {
+    "line": 7,
+    "col": 12
+   },
+   "end": {
+    "line": 7,
+    "col": 78
+   },
+   "extra": {
+    "message": "Starting a process with a partial executable path",
+    "severity": "INFO",
+    "metadata": {
+     "cwe": [
+      "CWE-78"
+     ],
+     "confidence": "high"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B603.subprocess_without_shell_equals_true",
+   "path": "V17.py",
+   "start": {
+    "line": 7,
+    "col": 12
+   },
+   "end": {
+    "line": 7,
+    "col": 78
+   },
+   "extra": {
+    "message": "subprocess call - check for execution of untrusted input.",
+    "severity": "INFO",
+    "metadata": {
+     "cwe": [
+      "CWE-78"
+     ],
+     "confidence": "high"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B105.hardcoded_password_string",
+   "path": "V20.py",
+   "start": {
+    "line": 5,
+    "col": 51
+   },
+   "end": {
+    "line": 5,
+    "col": 61
+   },
+   "extra": {
+    "message": "Possible hardcoded password: 'P@ssw0rd123'",
+    "severity": "INFO",
+    "metadata": {
+     "cwe": [
+      "CWE-259"
+     ],
+     "confidence": "medium"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B506.yaml_load",
+   "path": "V22.py",
+   "start": {
+    "line": 7,
+    "col": 12
+   },
+   "end": {
+    "line": 7,
+    "col": 47
+   },
+   "extra": {
+    "message": "Use of unsafe yaml load. Allows instantiation of arbitrary objects. Consider yaml.safe_load().",
+    "severity": "WARNING",
+    "metadata": {
+     "cwe": [
+      "CWE-20"
+     ],
+     "confidence": "high"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B608.hardcoded_sql_expressions",
+   "path": "V26.py",
+   "start": {
+    "line": 6,
+    "col": 13
+   },
+   "end": {
+    "line": 6,
+    "col": 44
+   },
+   "extra": {
+    "message": "Possible SQL injection vector through string-based query construction.",
+    "severity": "WARNING",
+    "metadata": {
+     "cwe": [
+      "CWE-89"
+     ],
+     "confidence": "low"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B404.blacklist",
+   "path": "V28.py",
+   "start": {
+    "line": 5,
+    "col": 1
+   },
+   "end": {
+    "line": 5,
+    "col": 18
+   },
+   "extra": {
+    "message": "Consider possible security implications associated with the subprocess module.",
+    "severity": "INFO",
+    "metadata": {
+     "cwe": [
+      "CWE-78"
+     ],
+     "confidence": "high"
+    }
+   }
+  },
+  {
+   "check_id": "bandit.B602.subprocess_popen_with_shell_equals_true",
+   "path": "V28.py",
+   "start": {
+    "line": 7,
+    "col": 12
+   },
+   "end": {
+    "line": 7,
+    "col": 59
+   },
+   "extra": {
+    "message": "subprocess call with shell=True identified, security issue.",
+    "severity": "ERROR",
+    "metadata": {
+     "cwe": [
+      "CWE-78"
+     ],
+     "confidence": "high"
+    }
+   }
+  }
+ ],
+ "errors": []
+}

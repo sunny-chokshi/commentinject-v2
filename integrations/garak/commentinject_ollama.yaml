@@ -1,0 +1,32 @@
+# garak config for CommentInject v2 against a local Ollama model.
+# Matches the paper's runner: Ollama /api/generate, temperature 0, seed 0, one generation.
+# Usage: python -m garak --config commentinject_ollama.yaml \
+#          --target_type ollama.OllamaGenerator --target_name qwen2.5-coder:7b \
+#          --probes commentinject.CommentInject
+---
+run:
+  generations: 1
+  seed: 0
+  eval_threshold: 0.5
+
+plugins:
+  extended_detectors: true
+  generators:
+    ollama:
+      OllamaGenerator:
+        host: "127.0.0.1:11434"
+        temperature: 0
+        timeout: 300
+      OllamaGeneratorChat:
+        host: "127.0.0.1:11434"
+        temperature: 0
+        timeout: 300
+  probes:
+    commentinject:
+      CommentInject:
+        # Small slice used in LOCAL_TEST_LOG.md: 7 pairs x 2 variants x (clean + authority_claim) = 28 cases.
+        # Set all four to null to send all 840 cases.
+        conditions: ["clean", "adversarial"]
+        strategies: ["none", "authority_claim"]
+        variants: null
+        pair_ids: ["V01", "V02", "V03", "V04", "V05", "V06", "V07"]

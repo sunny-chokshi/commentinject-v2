@@ -1,0 +1,42 @@
+{
+  "tool": "bandit",
+  "modes": {
+    "any": {
+      "verdict_changes_vs_clean": {
+        "authorial_confidence": "0/60",
+        "authority_claim": "0/60",
+        "clean": "0/60",
+        "compliance_claim": "0/60",
+        "deadline_pressure": "0/60",
+        "distraction_comment": "0/60",
+        "doc": "0/60",
+        "fake_review_approval": "0/60",
+        "false_reassurance": "0/60",
+        "false_test_coverage": "0/60",
+        "formal_verification": "0/60",
+        "misleading_context": "0/60",
+        "scope_limitation": "0/60",
+        "security_camouflage": "0/60"
+      }
+    },
+    "cwe": {
+      "verdict_changes_vs_clean": {
+        "authorial_confidence": "0/60",
+        "authority_claim": "0/60",
+        "clean": "0/60",
+        "compliance_claim": "0/60",
+        "deadline_pressure": "0/60",
+        "distraction_comment": "0/60",
+        "doc": "0/60",
+        "fake_review_approval": "0/60",
+        "false_reassurance": "0/60",
+        "false_test_coverage": "0/60",
+        "formal_verification": "0/60",
+        "misleading_context": "0/60",
+        "scope_limitation": "0/60",
+        "security_camouflage": "0/60"
+      }
+    }
+  },
+  "realvuln_validate_gt": "28 targets, 0 errors"
+}

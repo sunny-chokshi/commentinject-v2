@@ -1,0 +1,8 @@
+dataset: Phase 2 (corrected); data/cases.jsonl sha256 79c3d232e8a59a3a
+cap $0.95 (cumulative); already spent $0.0000; retries disabled; timeout 90 s per call
+skip claude-haiku-5-5: ANTHROPIC_API_KEY not set
+skip gpt-6-luna: OPENAI_API_KEY not set
+skip gemini-3.8-flash: GEMINI_API_KEY not set
+skip claude-sonnet-5-5: ANTHROPIC_API_KEY not set
+skip gpt-6.1-terra: OPENAI_API_KEY not set
+TOTAL SPENT $0.0000 (cap $0.95)
