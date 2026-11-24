@@ -1,0 +1,11 @@
+{
+  "title": "CommentInject v2: matched-pair benchmark of adversarial code comments against LLM vulnerability detectors",
+  "upload_type": "dataset",
+  "version": "2.0.0-rc2",
+  "description": "Release candidate (exploratory). 30 matched pairs of vulnerable and minimally fixed Python functions (14 CWEs) under 14 comment conditions (clean, a neutral doc comment, and 12 adversarial strategies): 840 cases. Reports TPR/FPR, balanced accuracy and signal-detection d-prime and criterion shifts with pair-clustered bootstrap intervals and TOST equivalence, so that a detector that loses discrimination can be told apart from one that only becomes less willing to flag. Includes Phase 2 seed-0 results on four local open-weight models, a comment-blind SAST control (Bandit), a 5-pair frontier-model probe, a scorer for any detector, and local integrations for Inspect/inspect_evals, garak, promptfoo, Microsoft PyRIT and RealVuln. Human blinded review of the twins is in progress and may change pairs. Code: MIT; data: CC-BY-4.0.",
+  "creators": [{"name": "Chokshi, Sunny", "affiliation": "University of the Cumberlands", "orcid": "0009-0003-4738-7759"}],
+  "keywords": ["adversarial comment injection", "prompt injection", "vulnerability detection", "large language models", "code security", "benchmark", "signal detection theory", "CWE"],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "related_identifiers": [{"identifier": "10.5281/zenodo.23088528", "relation": "isNewVersionOf", "scheme": "doi"}]
+}

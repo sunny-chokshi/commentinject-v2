@@ -10,7 +10,9 @@ authors:
     given-names: Sunny
     orcid: "https://orcid.org/0009-0003-4738-7759"
     affiliation: "University of the Cumberlands"
-license: "MIT AND CC-BY-4.0"
+license:
+  - MIT
+  - CC-BY-4.0
 keywords:
   - adversarial comment injection
   - prompt injection
