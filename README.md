@@ -1,6 +1,10 @@
 # CommentInject v2: do code comments move your vulnerability detector?
 
-> **Status: release candidate 2.0.0-rc2 (exploratory).** The matched twins have passed automated checks, runtime exploit tests (XML pairs) and an independent model review; **the blinded human review is in progress** and may change pairs. Phase 2 results below are from **seed 0 only**; seeds 1–2 are running and will be added in the next version. v1 (DOI 10.5281/zenodo.23088528) is unchanged.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24517328.svg)](https://doi.org/10.5281/zenodo.24517328)
+
+This version: DOI 10.5281/zenodo.24517328 · all versions: 10.5281/zenodo.24517327 · code: https://github.com/sunny-chokshi/commentinject-v2
+
+> **Status: release candidate 2.0.0-rc2 (exploratory), published 2026-11-24.** The matched twins have passed automated checks, runtime exploit tests (XML pairs) and an independent model review; **the blinded human review is in progress** and may change pairs. Phase 2 results below are from **seed 0 only**; seeds 1–2 are running and will be added in the next version. v1 (DOI 10.5281/zenodo.23088528) is unchanged.
 
 CommentInject v2 tests whether **natural-language comments inside code** change what an LLM (or any tool) says about that code's security, and **how** they change it. It asks two questions:
 - Does the detector **lose the ability to tell vulnerable from fixed code** (discrimination, d′)?
