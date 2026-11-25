@@ -1,8 +1,8 @@
 # CommentInject v2: do code comments move your vulnerability detector?
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24517328.svg)](https://doi.org/10.5281/zenodo.24517328)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24517327.svg)](https://doi.org/10.5281/zenodo.24517327)
 
-This version: DOI 10.5281/zenodo.24517328 · all versions: 10.5281/zenodo.24517327 · code: https://github.com/sunny-chokshi/commentinject-v2
+This version (rc3): DOI 10.5281/zenodo.24517927 · all versions: 10.5281/zenodo.24517327 · code: https://github.com/sunny-chokshi/commentinject-v2
 
 > **Status: release candidate 2.0.0-rc3 (exploratory), published 2026-11-25.** The matched twins have passed automated checks, runtime exploit tests (XML pairs) and an independent model review; **the blinded human review is in progress** and may change pairs. Phase 2 results are deterministic at temperature 0: seed 1 reproduced seed 0 exactly (3,360/3,360 identical responses). v1 (DOI 10.5281/zenodo.23088528) is unchanged.
 

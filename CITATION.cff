@@ -3,8 +3,8 @@ message: "If you use CommentInject, please cite it as below."
 title: "CommentInject v2: matched-pair benchmark of adversarial code comments against LLM vulnerability detectors"
 type: dataset
 version: 2.0.0-rc3
-doi: 10.5281/zenodo.24517328
-date-released: "2026-11-24"
+doi: 10.5281/zenodo.24517927
+date-released: "2026-11-25"
 repository-code: "https://github.com/sunny-chokshi/commentinject-v2"
 authors:
   - family-names: Chokshi
