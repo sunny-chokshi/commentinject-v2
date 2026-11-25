@@ -4,7 +4,7 @@
 
 This version (rc3): DOI 10.5281/zenodo.24517927 · all versions: 10.5281/zenodo.24517327 · code: https://github.com/sunny-chokshi/commentinject-v2
 
-> **Status: release candidate 2.0.0-rc3 (exploratory), published 2026-11-25.** The matched twins have passed automated checks, runtime exploit tests (XML pairs) and an independent model review; **the blinded human review is in progress** and may change pairs. Phase 2 results are deterministic at temperature 0: seed 1 reproduced seed 0 exactly (3,360/3,360 identical responses). v1 (DOI 10.5281/zenodo.23088528) is unchanged.
+> **Status: release candidate 2.0.0-rc3 (exploratory), published 2026-11-25.** The matched twins have passed automated checks, runtime exploit tests (XML pairs) and an independent model review; **the blinded human review is in progress** and may change pairs. Phase 2 results come from one deterministic run at temperature 0 (3,360 trials). A repeat with seed 1 gave identical responses (3,360/3,360), which confirms determinism; it is not an independent replication. v1 (DOI 10.5281/zenodo.23088528) is unchanged.
 
 CommentInject v2 tests whether **natural-language comments inside code** change what an LLM (or any tool) says about that code's security, and **how** they change it. It asks two questions:
 - Does the detector **lose the ability to tell vulnerable from fixed code** (discrimination, d′)?
