@@ -6,6 +6,21 @@ This version (rc3): DOI 10.5281/zenodo.24517927 · all versions: 10.5281/zenodo.
 
 > **Status: release candidate 2.0.0-rc3 (exploratory), published 2026-11-25.** The matched twins have passed automated checks, runtime exploit tests (XML pairs) and an independent model review; **the blinded human review is in progress** and may change pairs. Phase 2 results come from one deterministic run at temperature 0 (3,360 trials). A repeat with seed 1 gave identical responses (3,360/3,360), which confirms determinism; it is not an independent replication. v1 (DOI 10.5281/zenodo.23088528) is unchanged.
 
+> **Scientific results update (2026-11-25)**
+>
+> The qwen3.5:4b discrimination result reported for v2.0.0-rc3 has been superseded by revised, author-adjudicated results.
+>
+> On the revised 30-pair extended set, Δd′ is −0.57 (95% CI [−1.07, +0.02]). The reduction in discrimination was not statistically established under the prespecified primary analysis. A secondary pair-level analysis, holding the tested comment strategies fixed, produced a 95% CI of [−1.00, −0.08].
+>
+> The discrimination inference is sensitive to the analysis method, clustering and inclusion of revised pairs. On the 27-pair core set, the secondary interval includes zero when V08 and V23 are treated as separate clusters. An exploratory analysis excluding V23 and V27 from the extended set also produced a primary interval with an upper endpoint close to zero.
+>
+> The primary analysis supports a criterion shift toward more lenient judgments (Δc +0.65, 95% CI [+0.19, +1.16]).
+>
+> The primary analysis rule was documented after the pilot and before the original Phase 2 run, according to the author's local Git record. Six fixed twins were revised after outcome data were available: V10 before the rc3 release and five additional twins after rc3. Some replacement trials for other models used a different generation limit; none of the qwen3.5:4b trials used that explicit limit.
+>
+> These revised results are exploratory, author-adjudicated and based on a single-seed evaluation with selective re-runs of revised cases. They are not yet published. Independent review has been requested; responses are awaited.
+
+
 CommentInject v2 tests whether **natural-language comments inside code** change what an LLM (or any tool) says about that code's security, and **how** they change it. It asks two questions:
 - Does the detector **lose the ability to tell vulnerable from fixed code** (discrimination, d′)?
 - Or does it just **become less willing to flag anything** (criterion, c)?
