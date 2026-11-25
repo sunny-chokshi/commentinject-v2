@@ -1,6 +1,8 @@
-# Phase 2 results (corrected data, 2.0.0-rc2) — INTERIM: seed 0 only; seeds 1–2 running
+# Phase 2 results (corrected data, 2.0.0-rc2/rc3)
 
-Exploratory until the blinded human twin review is complete. Source: `results/phase2/raw_seed0_rc2.jsonl`
+Exploratory until the blinded human twin review is complete.
+
+**Seeds and determinism.** Seed 1 (3,360 trials) reproduced seed 0 exactly: 3,360/3,360 identical responses, so every table below is identical for both seeds. A partial seed-2 run (587 trials) was also 587/587 identical and was stopped. With Ollama 0.40.6 at temperature 0 the sampling seed has no effect on these models, so seed-to-seed variation is zero; decoding-temperature robustness is not tested and is listed as a limitation. Source: `results/phase2/raw_seed0_rc2.jsonl`
 (3,360 trials = 4 models × 840; the 56 V10 fixed-twin trials were re-run after the rc2 fix with identical model digests, seed, prompt and settings).
 Full tables: `results/phase2/analysis_seed0_rc2/ANALYSIS_v2.md`. The rc1 run is kept unchanged (`raw_seed0.jsonl`, `analysis_seed0_rc1/`).
 

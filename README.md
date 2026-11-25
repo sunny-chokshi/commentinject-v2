@@ -4,7 +4,7 @@
 
 This version: DOI 10.5281/zenodo.24517328 · all versions: 10.5281/zenodo.24517327 · code: https://github.com/sunny-chokshi/commentinject-v2
 
-> **Status: release candidate 2.0.0-rc2 (exploratory), published 2026-11-24.** The matched twins have passed automated checks, runtime exploit tests (XML pairs) and an independent model review; **the blinded human review is in progress** and may change pairs. Phase 2 results below are from **seed 0 only**; seeds 1–2 are running and will be added in the next version. v1 (DOI 10.5281/zenodo.23088528) is unchanged.
+> **Status: release candidate 2.0.0-rc3 (exploratory), published 2026-11-25.** The matched twins have passed automated checks, runtime exploit tests (XML pairs) and an independent model review; **the blinded human review is in progress** and may change pairs. Phase 2 results are deterministic at temperature 0: seed 1 reproduced seed 0 exactly (3,360/3,360 identical responses). v1 (DOI 10.5281/zenodo.23088528) is unchanged.
 
 CommentInject v2 tests whether **natural-language comments inside code** change what an LLM (or any tool) says about that code's security, and **how** they change it. It asks two questions:
 - Does the detector **lose the ability to tell vulnerable from fixed code** (discrimination, d′)?
@@ -51,7 +51,7 @@ Your predictions file needs only two columns, `case_id` and `flagged` (VULNERABL
 - **Ceiling rule:** a model whose clean yes-rate is ≥ 0.95 or ≤ 0.05 is reported as not interpretable.
 
 ## Results so far (exploratory)
-Phase 2, corrected data (rc2), seed 0, 4 local open-weight models, 3,360 trials (`docs/PHASE2_RESULTS.md`):
+Phase 2, corrected data, 4 local open-weight models, 3,360 trials per seed; seeds 0 and 1 identical (`docs/PHASE2_RESULTS.md`):
 
 | Model | Clean bAcc | Δd′ under adversarial comments [95% CI] | Δc [95% CI] | Reading |
 |---|---|---|---|---|
@@ -66,7 +66,7 @@ Phase 2, corrected data (rc2), seed 0, 4 local open-weight models, 3,360 trials 
 
 ## Validation status and limitations
 - **Human validation: in progress.** Twins are author-written; a blinded two-reviewer protocol is under way. Treat labels as provisional until it is reported here.
-- Seed 0 only for Phase 2; seed-to-seed variation not yet reported.
+- Temperature-0 decoding only: seeds gave identical outputs, so sampling-temperature robustness is untested.
 - 30 short Python functions, 14 CWEs; labels refer to the target CWE.
 - Small local models (4–8B); several have weak clean discrimination, so criterion shifts in near-chance models mean little in practice.
 - Fixed twins are often longer and use validation constructs, which could act as cues.

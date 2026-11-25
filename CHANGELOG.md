@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.0.0-rc3 (2026-11-25)
+- Phase 2 seed 1 added (3,360 trials): identical to seed 0 in every response; partial seed 2 (587 trials) also identical and stopped. Temperature-0 decoding is deterministic here; results and data unchanged from rc2.
+
 ## 2.0.0-rc2 (unreleased, 2026-11-24)
 - **V10 fixed twin** is now the one-token minimal edit of the vulnerable twin: `parser.setFeature(xml.sax.handler.feature_external_ges, False)` (was: the default parser, with no explicit setting). Reason: in the paid-model probe, all three frontier models flagged the old fixed twin as XXE because hardening was not explicit, so it was not a fair safe control. Exploit-tested on CPython 3.14.6 / expat 2.8.2: vulnerable leaks a local file through a general external entity, a parameter entity and an external DTD subset; fixed leaks through none (`tests/test_xml_runtime.py`, `docs/API_PROBE_RESULTS_2026-11-24.md`).
 - Only the 14 `V10-s-*` cases changed (sha256); all other 826 cases are byte-identical. Phase 2 seed 0 on rc1 data is kept unchanged (tag `phase2-seed0-2026-11-24`); the 14 cases are re-run with the same models (same digests), seed, prompt and settings into `results/phase2/raw_seed0_v10fix.jsonl`.
